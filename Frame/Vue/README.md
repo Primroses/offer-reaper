@@ -162,3 +162,9 @@ var app = new Vue({       --------> 创建Vue对象
 
 附上一个Vue diff 的解析 [--->](https://github.com/Primroses/offer-reaper/tree/master/Frame/Vue/vue的diff)
 
+## Vue在页面切换的时候是怎么改变视图的
+(1)利用Vue-Router的原理  
+    1.利用Hash或者HTML5的方法切割地址
+(2)在Vue-Router的实例上配对地址
+(3)通过Vue的mixin()方法，全局注册了一个混合。影响到后面每一个创建的Vue实例。在钩子beforeCreate中通过defineReactive定义了响应式的_route属性。就是响应式属性。当_route的值改变时，会自动调用Vue实例的render()方法更新视图
+
