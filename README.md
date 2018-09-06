@@ -1,7 +1,6 @@
 <div align="center">
-    <img src="./img.png" width="150px">
+    <img src="./img.png" width="200px">
     <br>
-    <p>Offer-Reaper</p>
 </div>
 
 ### :memo:HTML
