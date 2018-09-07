@@ -207,11 +207,11 @@ bus.$on('bus',function(val){
 (3)通过Vue的mixin()方法，全局注册了一个混合。影响到后面每一个创建的Vue实例。在钩子beforeCreate中通过defineReactive定义了响应式的_route属性。就是响应式属性。当_route的值改变时，会自动调用Vue实例的render()方法更新视图  
 
 ## vue-loader的工作原理
-vue-loader 将 basic.vue 编译到最终输出的 bundle.js 的过程中，其实调用了四个小的 loader。它们分别是：
-(1)selector --  负责抽离<template>、<style>、<script>部分的代码，然后交给不同的loader去处理。
-(2)style-compiler -- 负责处理抽离出来的style代码块， 然后交给 css-loader 处理生成 module, 最后通过 vue-style-loader 将 css 放在 <style> 里面，然后注入到 HTML 里。
-(3)template-compiler -- 负责处理抽离出来的 template 代码块，最终输出成可用的HTML。
-(4)babel-loader --负责处理抽离出来的js代码块。
+vue-loader 将 basic.vue 编译到最终输出的 bundle.js 的过程中，其实调用了四个小的 loader。它们分别是：  
+(1)selector --  负责抽离<template>、<style>、<script>部分的代码，然后交给不同的loader去处理。  
+(2)style-compiler -- 负责处理抽离出来的style代码块， 然后交给 css-loader 处理生成 module, 最后通过 vue-style-loader 将 css 放在 <style> 里面，然后注入到 HTML 里。  
+(3)template-compiler -- 负责处理抽离出来的 template 代码块，最终输出成可用的HTML。  
+(4)babel-loader --负责处理抽离出来的js代码块。  
 
 
 
