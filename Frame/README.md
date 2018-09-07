@@ -20,4 +20,4 @@
 
 - Vue-Router
 
-[Vue-Router的工作原理](https://github.com/Primroses/offer-reaper/tree/master/Frame/Vue-Router)
+[Vue-Router的工作原理](https://github.com/Primroses/offer-reaper/tree/master/Frame/Vue/Vue-Router)
