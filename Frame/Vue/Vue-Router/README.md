@@ -12,4 +12,4 @@
 5.hash设置没有浏览器兼容问题，但是pushState可能有  
 
 ## 手撕简单的锚点实现路由的方法
-[点击](https://github.com/Primroses/offer-reaper/tree/master/Frame/Vue/Vue-Router/hash.js)
+[点击](https://github.com/Primroses/offer-reaper/blob/b6fd48343d770461fa38d8291a8bb3b46f076122/Frame/Vue/Vue-Router/hash.js)
